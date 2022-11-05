@@ -1,11 +1,14 @@
+import os
+
+from scripts.tif_util import yaml_deps
 from post import post
 from pre import pre
 from run import run
-from actions.action_templates import template_exit, template_init
+from actions.action_templates import template_init, template_exit
 
 if __name__ == '__main__':
     template_init()
     pre()
-    run()
+    # run()
     post()
     template_exit()
